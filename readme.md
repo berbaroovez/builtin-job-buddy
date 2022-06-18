@@ -1,5 +1,19 @@
 This is a [Plasmo extension](https://docs.plasmo.com/) project bootstrapped with [`plasmo init`](https://www.npmjs.com/package/plasmo).
 
+
+## Purpose
+
+To track which jobs you've applied to any website owned by builtin.com such as builtinchicago.org or builtinla.com . It also allows you to set a list of terms you dont want from jobs such as senior, sr, or manager. You then have the option to either highlight those jobs in a different color or hide them completly. 
+
+
+## Contribute
+
+### Install dependencies
+
+```bash
+pnpm install
+```
+
 ## Getting Started
 
 First, run the development server:
@@ -28,6 +42,5 @@ npm run build
 
 This should create a production bundle for your extension, ready to be zipped and published to the stores.
 
-## Submit to the webstores
 
-The easiest way to deploy your Plasmo extension is to use the built-in [bpp](https://bpp.browser.market) GitHub action. Prior to using this action however, make sure to build your extension and upload the first version to the store to establish the basic credentials. Then, simply follow [this setup instruction](https://docs.plasmo.com/workflows#submit-your-extension) and you should be on your way for automated submission!
+once again thank you to plasmo for making such a good framework
