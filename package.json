@@ -1,17 +1,21 @@
 {
-  "name": "test-plasmo",
-  "displayName": "Test plasmo",
-  "version": "0.0.0",
-  "description": "A basic Plasmo extension.",
-  "author": "Berbaroovez",
+  "name": "builtin-job-buddy",
+  "displayName": "BuiltIn Job Buddy",
+  "version": "1.0.0",
+  "description": "An extension that allows you to track what jobs you've applied to on builtinchicago.",
+  "author": "Carter",
   "scripts": {
     "dev": "plasmo dev",
     "build": "plasmo build"
   },
   "dependencies": {
+    "@plasmohq/storage": "^0.5.1",
+    "@supabase/supabase-js": "^1.35.3",
     "plasmo": "latest",
     "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "react-color": "^2.19.3",
+    "react-dom": "18.1.0",
+    "react-supabase": "^0.2.0"
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "3.2.0",
