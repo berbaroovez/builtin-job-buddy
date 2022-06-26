@@ -2,7 +2,7 @@
   "name": "builtin-job-buddy",
   "displayName": "BuiltIn Job Buddy",
   
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "An extension that allows you to track what jobs you've applied to on builtinchicago.",
   "author": "Carter",
   "scripts": {
