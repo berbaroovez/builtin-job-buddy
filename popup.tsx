@@ -2,7 +2,7 @@ import { useState } from "react"
 import { SketchPicker } from "react-color"
 
 import { useStorage } from "@plasmohq/storage"
-
+import iconSrc from "url:./assets/devicon.png"
 import "./style.css"
 
 function IndexPopup() {
@@ -26,9 +26,17 @@ function IndexPopup() {
   const [showBannedColorPicker, setShowBannedColorPicker] = useState(false)
   const [showAppliedColorPicker, setShowAppliedColorPicker] = useState(false)
 
+  chrome.management.getSelf((self) => {
+    console.log("install type",self.installType)
+    if (self.installType === "development") {
+      console.log("development version")
+    chrome.action.setIcon({ path: iconSrc })
+    }
+  })
+
   return (
     <div className="w-80 font-sans p-4 bg-slate-600 text-gray-200 flex  flex-col gap-4 min-h-[400px]">
-      <h1 className="text-2xl font-black text-center ">BuiltIn Job Buddy</h1>
+      <h1 className="text-2xl font-black text-center ">BuiltIn Job Buddy Dev</h1>
 
       <div className="bg-gray-200 h-px w-5/6 mx-auto" />
 

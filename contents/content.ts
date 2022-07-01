@@ -109,7 +109,7 @@ const handleMutation = (mutation: MutationRecord[]) => {
 
 const jobObserver = new MutationObserver(handleMutation);
 const main = async () => {
-    console.log("main");
+    console.log("Debug: main");
 
     //we get these all here because that means well update the three list one time perpage whenver the url changes
     //there is no need to update these list after every update since the extension is intended for coming baack a week later to track which jobs theyve applied for
@@ -118,6 +118,13 @@ const main = async () => {
     appliedJobsList = await storage.get("appliedJobs");
     colorForAvoid = await storage.get("bannedColor");
     colorForApplied = await storage.get("appliedColor");
+
+    //print out each of the variables above with a label
+    console.log("Debug: hideBannedJobs: " + hideBannedJobs);
+    console.log("Debug: bannedTermsList: " + bannedTermsList);
+    console.log("Debug: appliedJobsList: " + appliedJobsList);
+    console.log("Debug: colorForAvoid: " + colorForAvoid);
+    console.log("Debug: colorForApplied: " + colorForApplied);
 
     var centerCol = undefined;
 
@@ -144,6 +151,7 @@ main();
 let lastUrl = window.location.href;
 new MutationObserver(() => {
     const url = window.location.href;
+    console.log(`Checking If url has channged`);
     if (url !== lastUrl) {
         lastUrl = url;
         main();
