@@ -32,7 +32,16 @@
   },
   "manifest": {
     "host_permissions": [
-      "https://*/*"
+      
+      "https://www.builtinchicago.org/*",
+      "https://www.builtinaustin.com/*",
+      "https://www.builtinseattle.com/*",
+      "https://www.builtinsf.com/*",
+      "https://www.builtinnyc.com/*",
+      "https://www.builtinla.com/*",
+      "https://www.builtincolorado.com/*",
+      "https://www.builtinboston.com/*",
+      "https://builtin.com/*"
     ]
   }
 }
